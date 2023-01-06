@@ -4,7 +4,9 @@
 #799351 = cactus
 #335d2d = cactus lines */ 
 
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,6 +14,7 @@
 
 .canvas{
     position: relative;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +25,7 @@
 
 .circle{
     position: relative;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -33,6 +37,7 @@
 
 .pot{
     position: absolute;
+    margin: auto;
     border-bottom: 25vmin solid #835050;
     border-left: 7vmin solid transparent;
     border-right: 7vmin solid transparent;
@@ -45,6 +50,7 @@
 
 .pot::after{
    content: "";
+   margin: auto;
    position: absolute;
    width: 26vmin;
    height: 1vmin;
@@ -53,6 +59,7 @@
 
 .eyes{
     position: absolute;
+    margin: auto;
     width: 5vmin;
     height: 5vmin;
     background: #000;
@@ -64,6 +71,7 @@
 
 .cheeks{
     position: absolute;
+    margin: auto;
     width: 5vmin;
     height: 2.5vmin;
     top: 9vmin;
@@ -76,6 +84,7 @@
 
 .mouth {
     position: absolute;
+    margin: auto;
     width: 4vmin;   
     height: 4vmin;
     top: 8vmin;
@@ -87,6 +96,7 @@
 
 .cactus{
     position: absolute;
+    margin: auto;
     width: 17vmin;
     height: 30vmin;
     top: 15vmin;
@@ -99,6 +109,7 @@ border: 1vmin solid #000;
 .cactus::before{
     content: "";
     position: absolute;
+    margin: auto;
     width: 5vmin;
     height: 30vmin;
     left: 6vmin;
@@ -110,6 +121,7 @@ border: 1vmin solid #000;
 .cactus::after{
     content: "";
     position: absolute;
+    margin: auto;
     width: 5vmin;
     height: 30vmin;
     right: 6vmin;
@@ -120,6 +132,7 @@ border: 1vmin solid #000;
 
 .cactusSmall{
     position: absolute;
+    margin: auto;
     width: 17vmin;
     height: 20vmin;
     top: 25vmin;
@@ -132,6 +145,7 @@ border: 1vmin solid #000;
 .cactusSmall::before{
     content: "";
     position: absolute;
+    margin: auto;
     width: 5vmin;
     height: 20vmin;
     left: 6vmin;
@@ -143,6 +157,7 @@ border: 1vmin solid #000;
 .cactusSmall::after{
     content: "";
     position: absolute;
+    margin: auto;
     width: 5vmin;
     height: 20vmin;
     right: 6vmin;
@@ -153,6 +168,7 @@ border: 1vmin solid #000;
 
 .pricks{
     position: absolute;
+    margin: auto;
     width: 0;
     height: 0;
     border-left: 1vmin solid transparent;
@@ -164,6 +180,7 @@ border: 1vmin solid #000;
 .pricks::before{
     content: "";
     position: absolute;
+    margin: auto;
     width: 0;
     height: 0;
     top: 5vmin;
@@ -177,6 +194,7 @@ border: 1vmin solid #000;
 .pricks::after{
     content: "";
     position: absolute;
+    margin: auto;
     width: 0;
     height: 0;
     top: 7vmin;
@@ -188,6 +206,7 @@ border: 1vmin solid #000;
 
 .pricksRight{
     position: absolute;
+    margin: auto;
     width: 0;
     height: 0;
     top: -2vmin;
@@ -201,6 +220,7 @@ border: 1vmin solid #000;
 .pricksRight::before{
     content: "";
     position: absolute;
+    margin: auto;
     width: 0;
     height: 0;
     top: 10vmin;
@@ -215,6 +235,7 @@ border: 1vmin solid #000;
 .pricksRight::after{
     content: "";
     position: absolute;
+    margin: auto;
     width: 0;
     height: 0;
     top: 5vmin;
